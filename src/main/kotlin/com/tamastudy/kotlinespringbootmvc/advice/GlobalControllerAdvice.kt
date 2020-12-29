@@ -11,7 +11,7 @@ import java.lang.RuntimeException
 
 //@ControllerAdvice -> 일반 Controller 용
 //@RestControllerAdvice(basePackageClasses = [ExceptionApiController::class])
-@RestControllerAdvice
+//@RestControllerAdvice
 class GlobalControllerAdvice {
     @ExceptionHandler(value = [RuntimeException::class])
     fun exception(e: RuntimeException): String {
